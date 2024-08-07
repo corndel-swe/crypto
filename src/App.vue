@@ -41,5 +41,6 @@ form > * {
 input[type='text'],
 input[type='submit'] {
   padding: 0.5rem;
+  font-size: inherit;
 }
 </style>
