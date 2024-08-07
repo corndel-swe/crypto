@@ -20,6 +20,7 @@ function hashIt() {
       id="plaintext"
       v-model="state.plaintext"
       placeholder="input text"
+      autocomplete="off"
     />
     <input type="submit" value="Hash it" />
   </form>
