@@ -92,6 +92,7 @@ form > * {
 }
 
 input[type='text'],
+input[type='email'],
 input[type='submit'],
 input[type='button'] {
   padding: 0.5rem;
