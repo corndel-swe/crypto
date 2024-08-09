@@ -44,12 +44,14 @@ async function verifyIt() {
     <label>Verified</label>
     {{ state.verified }}
   </p>
-  <p>
-    <label>Payload</label>
-    {{ JSON.stringify(state.payload) }}
-  </p>
-  <p>
-    <label>Header</label>
-    {{ JSON.stringify(state.header) }}
-  </p>
+  <div v-if="state.verified">
+    <p>
+      <label>Payload</label>
+      {{ JSON.stringify(state.payload) }}
+    </p>
+    <p>
+      <label>Header</label>
+      {{ JSON.stringify(state.header) }}
+    </p>
+  </div>
 </template>
