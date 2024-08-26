@@ -6,6 +6,7 @@ import Encrypt from '../components/Encrypt.vue'
 import Decrypt from '../components/Decrypt.vue'
 import Sign from '../components/Sign.vue'
 import Verify from '../components/Verify.vue'
+import ContainerQuery from '../components/ContainerQuery.vue'
 
 const routes = [
   { path: '/hash', component: Hash },
@@ -13,7 +14,8 @@ const routes = [
   { path: '/encrypt', component: Encrypt },
   { path: '/decrypt', component: Decrypt },
   { path: '/sign', component: Sign },
-  { path: '/verify', component: Verify }
+  { path: '/verify', component: Verify },
+  { path: '/container-query', component: ContainerQuery }
 ]
 
 const router = createRouter({
