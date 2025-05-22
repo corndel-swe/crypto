@@ -11,9 +11,15 @@ const req = reactive({
 const json = ref()
 
 async function doFetch() {
+  const url = new URL(req.endpoint, req.base)
+
+  const headers = new Headers()
+  headers.append('accept', 'application/json')
+
   try {
-    const res = await fetch(new URL(req.endpoint, req.base), {
-      method: req.method
+    const res = await fetch(url, {
+      method: req.method,
+      headers
     })
     const data = await res.json()
 
