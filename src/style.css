@@ -83,7 +83,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 250px;
+  width: 330px;
   margin: auto;
 }
 
@@ -94,7 +94,8 @@ form > * {
 input[type='text'],
 input[type='email'],
 input[type='submit'],
-input[type='button'] {
+input[type='button'],
+select {
   padding: 0.5rem;
   font-size: inherit;
 }
